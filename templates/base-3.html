@@ -1,7 +1,5 @@
 {# templates/base.html #}
 
-{% import "macros.html" as macros %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +14,5 @@
   {% block content %}
     <h1>Welcome to {{ title }}!</h1>
   {% endblock content %}
-  <footer>
-    {{ macros.light_or_dark_mode("body") }}
-  </footer>
 </body>
 </html>
